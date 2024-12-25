@@ -28,6 +28,10 @@ int main(){
                 }
                 break;
             case 2:
+            if (m == 0) {
+                    printf("Mang rong\n");
+                    break;
+                }
                 for (int i = 0; i < m; i++) {
                     printf("arr[%d] = %d\n", i, arr[i]);
                 }
@@ -48,7 +52,11 @@ int main(){
                 printf("So luong phan tu chan: %d\n", temp);
                 printf("So luong phan tu le: %d\n", key);
                 break;
-            case 4: {
+            case 4: 
+            if (m == 0) {
+                    printf("Mang rong\n");
+                    break;
+                }
                 int max1 = arr[0], max2 = -1;
                 for (int i = 1; i < m; i++) {
                     if (arr[i] > max1) {
@@ -64,8 +72,12 @@ int main(){
                     printf("Gia tri lon thu hai la: %d\n", max2);
                 }
                 break;
-            }
+            
             case 5:
+            if (m == 0) {
+                    printf("Mang rong\n");
+                    break;
+                }
                 printf("Nhap phan tu muon them: ");
                 scanf("%d", &value);
                 for (int i = m; i > 0; i--) {
@@ -75,6 +87,10 @@ int main(){
                 m++;
                 break;
             case 6:
+            if (m == 0) {
+                    printf("Mang rong\n");
+                    break;
+                }
                 printf("Nhap vi tri can xoa: ");
                 scanf("%d", &pos);
                 if (pos < 0 || pos >= m) {
@@ -87,6 +103,10 @@ int main(){
                 m--;
                 break;
             case 7:
+            if (m == 0) {
+                    printf("Mang rong\n");
+                    break;
+                }
                 for (int i = 1; i < m; i++) {
                     key = arr[i];
                     int j = i - 1;
@@ -103,6 +123,10 @@ int main(){
                 printf("\n");
                 break;
             case 8:
+            if (m == 0) {
+                    printf("Mang rong\n");
+                    break;
+                }
                 printf("Nhap phan tu muon tim kiem: ");
                 scanf("%d", &value);
                 int let = 0, right = m - 1, flag = 0;
@@ -123,6 +147,10 @@ int main(){
                 }
                 break;
             case 9:
+            if (m == 0) {
+                    printf("Mang rong\n");
+                    break;
+                }
                 flag = 1; key = 0;
                 for (int i = 0; i < m; i++) {
                     flag = 1;
@@ -147,6 +175,10 @@ int main(){
                 printf("\n");
                 break;
             case 10:
+            if (m == 0) {
+                    printf("Mang rong\n");
+                    break;
+                }
                 for (int i = 0; i < m - 1; i++) {
                     for (int j = 0; j < m - i - 1; j++) {
                         if (arr[j] < arr[j + 1]) {
@@ -159,6 +191,10 @@ int main(){
                 printf("Mang da duoc sap xep giam dan.\n");
                 break;
             case 11:
+            if (m == 0) {
+                    printf("Mang rong\n");
+                    break;
+                }
                 printf("Thoat chuong trinh.\n");
                 return 0;
             default:
